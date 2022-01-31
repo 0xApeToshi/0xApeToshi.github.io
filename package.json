@@ -1,0 +1,37 @@
+{
+  "name": "nextjs-with-material-ui-styled-components",
+  "version": "1.0.0",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.17",
+    "@material-ui/core": "latest",
+    "@material-ui/icons": "^4.11.2",
+    "aos": "^3.0.0-beta.6",
+    "moment": "^2.29.1",
+    "next": "latest",
+    "prop-types": "latest",
+    "react": "latest",
+    "react-accessible-accordion": "^3.3.5",
+    "react-countdown": "^2.3.2",
+    "react-digital-clock": "^0.1.2",
+    "react-dom": "latest",
+    "react-material-ui-carousel": "^2.3.5",
+    "react-moment": "^1.1.1",
+    "react-player": "^2.9.0",
+    "react-scroll": "^1.8.4",
+    "react-swipeable-views": "^0.14.0",
+    "react-vertical-timeline-component": "^3.3.3",
+    "styled-components": "latest"
+  },
+  "devDependencies": {
+    "@iconify/react": "^3.0.1",
+    "babel-plugin-styled-components": "latest"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  }
+}
