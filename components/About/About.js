@@ -44,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   welcomeTitle: {
-    fontWeight: 100,
+    fontWeight: 400,
   },
   welcomeContent: {
     marginTop: "59px",
