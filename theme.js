@@ -22,7 +22,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily:  "'Poppins', 'Regular'",
+    fontFamily: "'Work Sans', sans-serif",
     h1: {
       fontSize: 50,
       fontWeight: 600,

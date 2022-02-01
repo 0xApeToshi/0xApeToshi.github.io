@@ -7,7 +7,6 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 import {
   Grid,
   AppBar,
-  Button,
   Box,
   Toolbar,
   Typography,
@@ -76,6 +75,7 @@ const useStyles = makeStyles((theme) => ({
     padding: "0 6em",
   },
   link: {
+    fontFamily: "'Poppins', 'Regular'",
     color: theme.palette.secondary.main,
     "&:hover": {
       color: theme.palette.info.main,
