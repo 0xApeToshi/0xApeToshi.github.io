@@ -5,6 +5,6 @@
 
 export const socialMedia = {
   instagram: "https://www.instagram.com/developer_satoru_akiyama/",
-  twitter: "https://twitter.com/ADrunkenAcademy",
-  discord: "https://discord.gg/DBgVSFTJ9m",
+  twitter: "https://twitter.com/0xApeToshi",
+  discord: "https://discord.gg/uPEbUpBV",
 };
