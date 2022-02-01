@@ -3,7 +3,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import Image from 'next/image'
 import apetoshiImage from 'public/apetoshi.png';
 import dappDexImage from 'public/dapp-dexterity-banner.png';
-import ReactPlayer from 'react-player'
 
 const useStyles = makeStyles((theme) => ({
   welcomeImgSx: {
@@ -63,7 +62,7 @@ const About = () => {
   const classes = useStyles();
 
   return (
-    <Grid id="welcome" container item>
+    <Grid id="about" container item>
       <Container>
         <Grid container alignItems="center" style={{ padding: 20, marginTop: 100 }}>
           <Grid container item md={5} direction="column" data-aos="fade-right">
@@ -92,26 +91,6 @@ const About = () => {
             <Grid container item justifyContent="center" className={classes.welcomeImgSx}>
               <Image width={500} height={350} className={classes.apetoshiProfile} src={dappDexImage} loading="lazy" alt="welcome" />
             </Grid>
-          </Grid>
-        </Grid>
-        <Grid container style={{ marginTop: 100 }}>
-          <Grid container item md={5} direction="column" data-aos="fade-right">
-            <Grid container item justifyContent="center" className={classes.welcomeImgSx}>
-              <ReactPlayer url='genart.mp4' loop={true} playing={true} controls={false} muted={true} />
-            </Grid>
-          </Grid>
-          <Grid container item md={7} direction="column" className={classes.welcomeTxt} data-aos="fade-left">
-            <Typography variant="h3" className={classes.welcomeContent}>
-              In the past, Ape Toshi built many things. Some of his favorites are: <br /><br />
-              - A register-based virtual machine in C<br />
-              - Hacking a 2003 single player game into a two-player co-op (C++)<br />
-              - N-body simulation of the solar system<br />
-              - Financial exchange simulation (order book model)<br />
-              - Discord bots for NFT verification<br /><br />
-              He also knows how to create generative art in p5.js and knows the basics of Inkscape and 3d
-              modeling in Blender. His most recent contributions include building and deploying ERC721, ERC20,
-              staking, and other custom contracts.
-            </Typography>
           </Grid>
         </Grid>
       </Container>
