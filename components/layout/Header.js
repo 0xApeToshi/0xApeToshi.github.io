@@ -208,7 +208,7 @@ const Header = () => {
                 </Grid>
                 <Grid item container md={2} sm={3} xs={6}>
                   <Grid container item alignItems="center" justifyContent="flex-end">
-                    <Linking href="https://www.youtube.com/watch?v=Yqga_WgX58k">
+                    <Linking href="#">
                       <FontAwesomeIcon className={classes.socialMedia} color="white" icon={['fab', 'youtube']} />
                       <FontAwesomeIcon className={classes.socialMedia} color="white" icon={['fab', 'instagram']} />
                       <FontAwesomeIcon className={classes.socialMedia} color="white" icon={['fab', 'discord']} />
