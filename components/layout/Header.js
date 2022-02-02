@@ -115,18 +115,33 @@ const Header = () => {
       <Grid container justifyContent="flex-start" spacing={4}>
         {path.map(({ name, link }) => (
           <Grid item key={link}>
-            <Link href="" style={{ textDecoration: "none" }} to={link} duration={2000} spy={true} smooth={true}>
-              <Typography
-                className={classes.link}
-                variant="h3"
-                style={{
-                  fontWeight: router.pathname === link && "bold",
-                  borderBottom: router.pathname === link && "1px solid #757ce8",
-                }}
-              >
-                <Box>{name}</Box>
-              </Typography>
-            </Link>
+            {link == 'blog' ? (
+              <Linking href="/blog" style={{ textDecoration: "none" }}>
+                <Typography
+                  className={classes.link}
+                  variant="h3"
+                  style={{
+                    fontWeight: router.pathname === link && "bold",
+                    borderBottom: router.pathname === link && "1px solid #757ce8",
+                  }}
+                >
+                  <Box>{name}</Box>
+                </Typography>
+              </Linking>
+            ) : (
+              <Link href="" style={{ textDecoration: "none" }} to={link} duration={2000} spy={true} smooth={true}>
+                <Typography
+                  className={classes.link}
+                  variant="h3"
+                  style={{
+                    fontWeight: router.pathname === link && "bold",
+                    borderBottom: router.pathname === link && "1px solid #757ce8",
+                  }}
+                >
+                  <Box>{name}</Box>
+                </Typography>
+              </Link>
+            )}
           </Grid>
         ))}
       </Grid>
@@ -200,7 +215,9 @@ const Header = () => {
               <Grid item container>
                 <Grid item container alignItems="center" justifyContent="space-between" md={10} sm={9} xs={6}>
                   <Box mr={4} display={{ xs: "none", sm: "block", md: "block" }}>
-                    <img src="logo.png" width={40} />
+                    <Linking href="/">
+                      <img src="logo.png" width={40} />
+                    </Linking>
                   </Box>
                   <Box>
                     {matches ? drawer : tabs}

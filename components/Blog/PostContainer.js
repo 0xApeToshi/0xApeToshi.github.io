@@ -1,37 +1,29 @@
-// import { connect } from 'react-redux';
-// import { find } from 'lodash';
-// import { fetchPost } from '../redux/actions';
-
-// import Post from './Post';
-
-// const mapStateToProps = (state, ownProps) => {
-//   const { match: { params: { id, slug } } } = ownProps;
-//   const post = find(state.posts.items, { id });
-//   return { id, post, slug };
-// };
-
-// const mapDispatchToProps = dispatch => ({
-//   fetchPost: (id, slug) => dispatch(fetchPost(id, slug)),
-// });
-
-// const wrapper = connect(mapStateToProps, mapDispatchToProps);
-// const PostContainer = wrapper(Post);
-// export default PostContainer;
-
-
-
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchPost } from '../../redux/actions';
 import { find } from 'lodash';
 import { Container, Grid, Typography, Divider, Paper } from "@material-ui/core";
 import moment from 'moment';
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles((theme) => ({
+  blogTitle: {
+    fontSize: "20px",
+    color: "#bfc500",
+    marginBottom: "10px"
+  },
+  blogContent: {
+    fontSize: "18px",
+    color: "#fff",
+    marginBottom: "20px"
+  },
+}));
 
 export default function Home(props) {
+  const classes = useStyles();
 
   const dispatch = useDispatch()
   const post = useSelector(state => {
-    console.log(state.posts.items, 'hhihi')
     return state.posts.items[0]
   })
 
@@ -40,18 +32,23 @@ export default function Home(props) {
   }, [])
 
   return (
-    <Paper zdepth={0} style={{ padding: 16 }}>
-      <article>
-        <h1>{post.title}</h1>
-        <time dateTime={post.date}>{moment(post.date).fromNow()}</time>
-        <br />
-        <br />
-        <Divider />
-        {post.content &&
-          post.content
-            .split('\n')
-            .map((paragraph, index) => <p key={index}>{paragraph}</p>)}
-      </article>
-    </Paper>
+    <Container>
+      <Paper zdepth={0} style={{ padding: 16 }}>
+        {post &&
+          (<article>
+            <Typography variant="h3" className={classes.blogTitle}>
+              {post.title}
+            </Typography>
+            <time dateTime={post.date}>{moment(post.date).fromNow()}</time>
+            <br />
+            <br />
+            <Divider />
+            {post.content &&
+              post.content
+                .split('\n')
+                .map((paragraph, index) => <Typography variant="h6" key={index} className={classes.blogContent}>{paragraph}</Typography>)}
+          </article>)}
+      </Paper>
+    </Container>
   )
 }
