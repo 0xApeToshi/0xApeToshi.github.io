@@ -6,6 +6,16 @@ import { Container, Grid, Typography, Divider, Paper } from "@material-ui/core";
 import moment from 'moment';
 import { makeStyles } from "@material-ui/core/styles";
 
+import {
+  Link as Linking
+} from "@material-ui/core";
+
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHome } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faHome);
+
 const useStyles = makeStyles((theme) => ({
   blogTitle: {
     fontSize: "20px",
@@ -33,7 +43,10 @@ export default function Home(props) {
 
   return (
     <Container>
-      <Paper zdepth={0} style={{ padding: 16 }}>
+      <Linking href="/">
+        <FontAwesomeIcon size={["2x"]} color="white" icon={['fa', 'home']} />
+      </Linking>
+      <Paper zdepth={0} style={{ paddingTop: 40 }}>
         {post &&
           (<article>
             <Typography variant="h3" className={classes.blogTitle}>

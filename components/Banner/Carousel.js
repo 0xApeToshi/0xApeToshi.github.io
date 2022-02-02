@@ -59,6 +59,7 @@ function SwipeableTextMobileStepper() {
         index={activeStep}
         onChangeIndex={handleStepChange}
         enableMouseEvents
+        interval={8000}
       >
         {images.map((step, index) => (
           <div key={step.label} style={{ padding: 20 }}>
