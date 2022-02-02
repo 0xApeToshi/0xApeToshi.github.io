@@ -33,7 +33,7 @@ export default function PostListContainer() {
     <Container>
       {posts && posts.items.map((post, index) => (
         <Link
-          href={`/post?id=${post.id}&slug=${post.slug}`}
+          href={`/post?title=${post.title}`}
           style={{ textDecoration: 'none' }}
           key={index}
         >
@@ -44,7 +44,7 @@ export default function PostListContainer() {
             <Typography variant="h6" className={classes.blogContent}>
               {truncate(post.summary, 250)}&hellip;
             </Typography>
-            <Box color="#03a9f4" textAlign="right">
+            <Box color="#03a9f4" textAlign="right" mb={3}>
               <time dateTime={post.date}>{moment(post.date).fromNow()}</time>
             </Box>
           </Box>
