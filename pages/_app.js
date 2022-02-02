@@ -8,7 +8,12 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import 'public/css/styles.css';
 
-export default function MyApp(props) {
+import withRedux, { createWrapper } from "next-redux-wrapper";
+import { Provider } from 'react-redux'
+import store from '../redux/store'
+
+
+function MyApp(props) {
   const { Component, pageProps } = props;
 
   React.useEffect(() => {
@@ -31,11 +36,13 @@ export default function MyApp(props) {
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
       </Head>
-      <ThemeProvider theme={theme}>
-        {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-        <CssBaseline />
-        <Component {...pageProps} />
-      </ThemeProvider>
+      <Provider store={store}>
+        <ThemeProvider theme={theme}>
+          {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+          <CssBaseline />
+          <Component {...pageProps} />
+        </ThemeProvider>
+      </Provider>
     </React.Fragment>
   );
 }
@@ -44,3 +51,8 @@ MyApp.propTypes = {
   Component: PropTypes.elementType.isRequired,
   pageProps: PropTypes.object.isRequired,
 };
+
+const makestore = () => store
+const wrapper = createWrapper(makestore)
+
+export default wrapper.withRedux(MyApp)
