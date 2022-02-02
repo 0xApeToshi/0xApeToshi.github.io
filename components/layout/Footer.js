@@ -45,7 +45,7 @@ const Footer = () => {
           justifyContent="center"
         >
           <Typography variant="subtitle2" className={classes.copylight}>
-            Copyright © 2021, All rights reserved.
+            Copyright © 2022. All rights reserved.
           </Typography>
         </Grid>
       </Container>

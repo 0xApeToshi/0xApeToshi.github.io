@@ -43,17 +43,19 @@ const Projects = () => {
           </Grid>
           <Grid container item md={7} direction="column" className={classes.welcomeTxt} data-aos="fade-left">
             <Typography variant="h1" style={{ fontWeight: 400 }}>
-              CyberKong #4674 is for about
+              Projects
             </Typography>
             <Typography variant="h3" className={classes.welcomeContent}>
               In the past, Ape Toshi built many things. Some of his favorites are: <br /><br />
-              - A register-based virtual machine in C<br />
-              - Hacking a 2003 single player game into a two-player co-op (C++)<br />
-              - N-body simulation of the solar system<br />
-              - Financial exchange simulation (order book model)<br />
-              - Discord bots for NFT verification<br /><br />
-              He also knows how to create generative art in p5.js and knows the basics of Inkscape and 3d
-              modeling in Blender. His most recent contributions include building and deploying ERC721, ERC20,
+              <li>  A register-based virtual machine in C</li>
+              <li>  Hacking a 2003 single player game into a two-player co-op (C++)</li>
+              <li>  N-body simulation of the solar system</li>
+              <li>  Financial exchange simulation (order book model)</li>
+              <li>  Discord bots for NFT verification</li>
+              <br/>
+              He also knows how to create generative art in <a href="https://p5js.org/">p5.js</a> and knows the basics of Inkscape and 3d
+              modeling in Blender. <br /><br />
+              His most recent contributions include building and deploying ERC721, ERC20,
               staking, and other custom contracts.
             </Typography>
           </Grid>

@@ -77,17 +77,17 @@ const About = () => {
             <Typography variant="h3" className={classes.welcomeContent}>
               Ape Toshi is a Physics student with a passion for CS and a GitHub Arctic Code Vault contributor on his main GitHub account.<br /><br />
               Sometimes he'll dox himself, but he mostly prefers to keep his privacy.<br /><br />
-              Every summer he volunteers as a mentor for STEM workshops meant for primary school and high school studentsHe got into crypto and NFTs in 2021 and realized his talent for Solidity and web3. <br /><br /> He became a successful smart contract developer which enabled him to transition to entrepreneurship; a venture he funds on his own.
+              Every summer he volunteers as a mentor for STEM workshops meant for primary school and high school students. He got into crypto and NFTs in 2021 and realized his talent for <b>Solidity & web3</b>. <br /><br /> He became a successful smart contract developer which enabled him to transition to entrepreneurship; a venture he funds on his own.
             </Typography>
           </Grid>
         </Grid>
         <Grid container alignItems="center" style={{ padding: 20, marginTop: 50 }}>
           <Grid container item md={7} direction="column" className={classes.welcomeTxt1} data-aos="fade-right">
             <Typography variant="h1" className={classes.welcomeTitle}>
-              CyberKong #4674 is for about
+              Dapp Dexterity
             </Typography>
             <Typography variant="h3" className={classes.welcomeContent}>
-              He is the founder of *Dapp Dexterity, a professional organization of world-class developers and
+              He is the founder of Dapp Dexterity, a professional organization of world-class developers and
               marketing managers that deliver rock-solid products in the field of DeFi and NFTs.<br /><br />
               As of recently, he became interested in metaverse land investments.
             </Typography>

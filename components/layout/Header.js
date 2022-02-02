@@ -216,7 +216,7 @@ const Header = () => {
                 <Grid item container alignItems="center" justifyContent="space-between" md={10} sm={9} xs={6}>
                   <Box mr={4} display={{ xs: "none", sm: "block", md: "block" }}>
                     <Linking href="/">
-                      <img src="logo.png" width={40} />
+                      <img src="vx.jpg" width={40} />
                     </Linking>
                   </Box>
                   <Box>
