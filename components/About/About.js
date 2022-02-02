@@ -80,14 +80,19 @@ const About = () => {
               Every summer he volunteers as a mentor for STEM workshops meant for primary school and high school studentsHe got into crypto and NFTs in 2021 and realized his talent for Solidity and web3. <br /><br /> He became a successful smart contract developer which enabled him to transition to entrepreneurship; a venture he funds on his own.
             </Typography>
           </Grid>
+        </Grid>
+        <Grid container alignItems="center" style={{ padding: 20, marginTop: 50 }}>
           <Grid container item md={7} direction="column" className={classes.welcomeTxt1} data-aos="fade-right">
+            <Typography variant="h1" className={classes.welcomeTitle}>
+              CyberKong #4674 is for about
+            </Typography>
             <Typography variant="h3" className={classes.welcomeContent}>
               He is the founder of *Dapp Dexterity, a professional organization of world-class developers and
               marketing managers that deliver rock-solid products in the field of DeFi and NFTs.<br /><br />
               As of recently, he became interested in metaverse land investments.
             </Typography>
           </Grid>
-          <Grid container item md={5} direction="column" data-aos="fade-left" style={{ marginTop: "100px" }}>
+          <Grid container item md={5} direction="column" data-aos="fade-left" >
             <Grid container item justifyContent="center" className={classes.welcomeImgSx}>
               <Image width={500} height={280} className={classes.apetoshiProfile} src={dappDexImage} loading="lazy" alt="Dapp Dexterity" />
             </Grid>

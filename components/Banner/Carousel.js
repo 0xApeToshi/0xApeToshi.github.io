@@ -17,6 +17,21 @@ const images = [
     label: '2',
     imgPath:
       'banner/2.gif',
+  },
+  {
+    label: '3',
+    imgPath:
+      'banner/3.jpg',
+  },
+  {
+    label: '4',
+    imgPath:
+      'banner/4.jpg',
+  },
+  {
+    label: '5',
+    imgPath:
+      'banner/5.jpg',
   }
 ];
 

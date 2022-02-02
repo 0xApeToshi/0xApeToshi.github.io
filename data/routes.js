@@ -5,5 +5,4 @@ export const routes = [
   { name: "About", link: "about" },
   { name: "Blog", link: "blog" },
   { name: "Projects", link: "projects" },
-  { name: "Contact", link: "contact" }
 ];

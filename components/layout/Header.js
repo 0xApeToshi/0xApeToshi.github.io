@@ -22,9 +22,9 @@ import useScrollTrigger from "@material-ui/core/useScrollTrigger";
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faYoutube, faInstagram, faDiscord, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faDiscord, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
-library.add(faYoutube, faInstagram, faDiscord, faTwitter);
+library.add(faGithub, faDiscord, faTwitter);
 
 import MenuIcon from "@material-ui/icons/Menu";
 import { routes } from "data/routes";
@@ -225,11 +225,14 @@ const Header = () => {
                 </Grid>
                 <Grid item container md={2} sm={3} xs={6}>
                   <Grid container item alignItems="center" justifyContent="flex-end">
-                    <Linking href="#">
-                      <FontAwesomeIcon className={classes.socialMedia} color="white" icon={['fab', 'youtube']} />
-                      <FontAwesomeIcon className={classes.socialMedia} color="white" icon={['fab', 'instagram']} />
+                    <Linking href="https://discord.gg/uPEbUpBV">
                       <FontAwesomeIcon className={classes.socialMedia} color="white" icon={['fab', 'discord']} />
-                      <FontAwesomeIcon color="white" icon={['fab', 'twitter']} />
+                    </Linking>
+                    <Linking href="https://twitter.com/0xApeToshi">
+                      <FontAwesomeIcon className={classes.socialMedia} color="white" icon={['fab', 'twitter']} />
+                    </Linking>
+                    <Linking href="https://github.com/0xApeToshi">
+                      <FontAwesomeIcon className={classes.socialMedia} color="white" icon={['fab', 'github']} />
                     </Linking>
                   </Grid>
                 </Grid>
