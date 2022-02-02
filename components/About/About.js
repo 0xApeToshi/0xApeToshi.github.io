@@ -89,7 +89,7 @@ const About = () => {
           </Grid>
           <Grid container item md={5} direction="column" data-aos="fade-left" style={{ marginTop: "100px" }}>
             <Grid container item justifyContent="center" className={classes.welcomeImgSx}>
-              <Image width={500} height={350} className={classes.apetoshiProfile} src={dappDexImage} loading="lazy" alt="welcome" />
+              <Image width={500} height={280} className={classes.apetoshiProfile} src={dappDexImage} loading="lazy" alt="Dapp Dexterity" />
             </Grid>
           </Grid>
         </Grid>

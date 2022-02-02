@@ -11,18 +11,13 @@ const images = [
   {
     label: '1',
     imgPath:
-      'banner/1.jpg',
+      'banner/1.gif',
   },
   {
     label: '2',
     imgPath:
-      'banner/1.jpg',
-  },
-  {
-    label: '3',
-    imgPath:
-      'banner/1.jpg',
-  },
+      'banner/2.gif',
+  }
 ];
 
 function SwipeableTextMobileStepper() {
@@ -66,6 +61,7 @@ function SwipeableTextMobileStepper() {
                   display: 'block',
                   overflow: 'hidden',
                   borderRadius: 15,
+                  height: "400px"
                 }}
                 src={step.imgPath}
                 alt={step.label}
