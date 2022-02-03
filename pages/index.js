@@ -4,8 +4,6 @@ import Banner from "components/Banner";
 import About from "components/About";
 import Projects from "components/Projects";
 
-import { Text } from 'react-native';
-
 const useStyles = makeStyles((theme) => ({
 
 }));
@@ -19,7 +17,6 @@ const Index = () => {
       description="Apetoshi"
     >
       <Banner />
-      <Text>All images/animations are mine :)</Text>
       <About />
       <Projects />
     </Layout>

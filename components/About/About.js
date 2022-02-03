@@ -1,8 +1,6 @@
 import { Container, Grid, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Image from 'next/image'
-import apetoshiImage from 'public/apetoshi.png';
-import dappDexImage from 'public/dapp-dexterity-banner.png';
 
 const useStyles = makeStyles((theme) => ({
   welcomeImgSx: {
@@ -67,7 +65,14 @@ const About = () => {
         <Grid container alignItems="center" style={{ padding: 20, marginTop: 100 }}>
           <Grid container item md={5} direction="column" data-aos="fade-right">
             <Grid container item justifyContent="center" className={classes.welcomeImgSx}>
-              <Image width={350} height={350} className={classes.apetoshiProfile} src={apetoshiImage} loading="lazy" alt="welcome" />
+              <Image
+                width="350"
+                height="350"
+                className={classes.apetoshiProfile}
+                src="/apetoshi.png"
+                alt="my image"
+                loading="eager"
+              />
             </Grid>
           </Grid>
           <Grid container item md={7} direction="column" className={classes.welcomeTxt} data-aos="fade-left">
@@ -94,7 +99,14 @@ const About = () => {
           </Grid>
           <Grid container item md={5} direction="column" data-aos="fade-left" >
             <Grid container item justifyContent="center" className={classes.welcomeImgSx}>
-              <Image width={500} height={280} className={classes.apetoshiProfile} src={dappDexImage} loading="lazy" alt="Dapp Dexterity" />
+              <Image
+                width="500"
+                height="280"
+                className={classes.apetoshiProfile}
+                src="/dapp-dexterity-banner.png"
+                alt="my image"
+                loading="eager"
+              />
             </Grid>
           </Grid>
         </Grid>

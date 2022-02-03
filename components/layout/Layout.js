@@ -17,7 +17,6 @@ const Layout = ({ children, title, description, ogImage, url }) => {
             ? title
             : "Template - Next.js and Material-UI with Header and Footer"}
         </title>
-        <link rel="icon" href="logo.png" />
         <meta
           name="description"
           key="description"

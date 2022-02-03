@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Container, Grid, Typography, LinearProgress, Button, Box } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import ReactPlayer from 'react-player'
+import ReactPlayer from 'react-player/lazy'
 
 const useStyles = makeStyles((theme) => ({
   welcomeImgSx: {
@@ -35,7 +35,7 @@ const Projects = () => {
   return (
     <Grid id="projects" container item>
       <Container>
-        <Grid container style={{ paddingTop: 100 }}>
+        <Grid container style={{ paddingTop: 80 }}>
           <Grid container item md={5} direction="column" data-aos="fade-right">
             <Grid container item justifyContent="center" className={classes.welcomeImgSx}>
               <ReactPlayer url='genart.mp4' loop={true} playing={true} controls={false} muted={true} />
