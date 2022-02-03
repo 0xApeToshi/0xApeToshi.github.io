@@ -115,33 +115,18 @@ const Header = () => {
       <Grid container justifyContent="flex-start" spacing={4}>
         {path.map(({ name, link }) => (
           <Grid item key={link}>
-            {link == 'blog' ? (
-              <Linking href="/blog" style={{ textDecoration: "none" }}>
-                <Typography
-                  className={classes.link}
-                  variant="h3"
-                  style={{
-                    fontWeight: router.pathname === link && "bold",
-                    borderBottom: router.pathname === link && "1px solid #757ce8",
-                  }}
-                >
-                  <Box>{name}</Box>
-                </Typography>
-              </Linking>
-            ) : (
-              <Link href="" style={{ textDecoration: "none" }} to={link} duration={2000} spy={true} smooth={true}>
-                <Typography
-                  className={classes.link}
-                  variant="h3"
-                  style={{
-                    fontWeight: router.pathname === link && "bold",
-                    borderBottom: router.pathname === link && "1px solid #757ce8",
-                  }}
-                >
-                  <Box>{name}</Box>
-                </Typography>
-              </Link>
-            )}
+            <Linking href={link} style={{ textDecoration: "none" }}>
+              <Typography
+                className={classes.link}
+                variant="h3"
+                style={{
+                  fontWeight: router.pathname === link && "bold",
+                  borderBottom: router.pathname === link && "1px solid #757ce8",
+                }}
+              >
+                <Box pb={1}>{name}</Box>
+              </Typography>
+            </Linking>
           </Grid>
         ))}
       </Grid>
