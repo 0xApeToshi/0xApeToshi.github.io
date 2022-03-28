@@ -4,8 +4,8 @@ import PostContainer from '../components/Blog/PostContainer';
 const Index = () => {
   return (
     <Layout
-      title="Apetoshi"
-      description="Apetoshi"
+      title="Ape Toshi"
+      description="Ape Toshi"
     >
       <PostContainer />
     </Layout>

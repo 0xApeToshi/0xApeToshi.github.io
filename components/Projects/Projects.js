@@ -36,14 +36,14 @@ const Projects = () => {
     <Grid id="projects" container item>
       <Container>
         <Grid container style={{ paddingTop: 80 }}>
-          <Grid container item md={5} direction="column" data-aos="fade-right">
+          {/* <Grid container item md={5} direction="column" data-aos="fade-right">
             <Grid container item justifyContent="center" className={classes.welcomeImgSx}>
-              <ReactPlayer url='genart.mp4' loop={true} playing={true} controls={false} muted={true} />
+              <ReactPlayer url='/' loop={true} playing={true} controls={false} muted={true} />
             </Grid>
-          </Grid>
+          </Grid> */}
           <Grid container item md={7} direction="column" className={classes.welcomeTxt} data-aos="fade-left">
             <Typography variant="h1" style={{ fontWeight: 400 }}>
-              Projects
+              Other Projects
             </Typography>
             <Typography variant="h3" className={classes.welcomeContent}>
               In the past, Ape Toshi built many things. Some of his favorites are: <br /><br />
@@ -52,11 +52,13 @@ const Projects = () => {
               <li>  N-body simulation of the solar system</li>
               <li>  Financial exchange simulation (order book model)</li>
               <li>  Discord bots for NFT verification</li>
-              <br/>
+              <br />
               He also knows how to create generative art in <a href="https://p5js.org/">p5.js</a> and knows the basics of Inkscape and 3d
               modeling in Blender. <br /><br />
               His most recent contributions include building and deploying ERC721, ERC20,
               staking, and other custom contracts.
+              <br /><br />
+              <br /><br />
             </Typography>
           </Grid>
         </Grid>

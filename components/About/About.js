@@ -62,6 +62,8 @@ const About = () => {
   return (
     <Grid id="about" container item>
       <Container>
+
+
         <Grid container alignItems="center" style={{ padding: 20, marginTop: 100 }}>
           <Grid container item md={5} direction="column" data-aos="fade-right">
             <Grid container item justifyContent="center" className={classes.welcomeImgSx}>
@@ -69,47 +71,101 @@ const About = () => {
                 width="350"
                 height="350"
                 className={classes.apetoshiProfile}
-                src="/apetoshi.png"
-                alt="my image"
+                src="/imgs/vx.png"
+                alt="Cyberkong #4674"
                 loading="eager"
               />
             </Grid>
           </Grid>
+
           <Grid container item md={7} direction="column" className={classes.welcomeTxt} data-aos="fade-left">
             <Typography variant="h1" className={classes.welcomeTitle}>
-              CyberKong #4674
+              NFT Enthusiast
             </Typography>
             <Typography variant="h3" className={classes.welcomeContent}>
               Ape Toshi is a Physics student with a passion for CS and a GitHub Arctic Code Vault contributor on his main GitHub account.<br /><br />
+              He is a proud owner of CyberKongz #4674 and VX #10865. <br /><br />
               Sometimes he'll dox himself, but he mostly prefers to keep his privacy.<br /><br />
               Every summer he volunteers as a mentor for STEM workshops meant for primary school and high school students. He got into crypto and NFTs in 2021 and realized his talent for <b>Solidity & web3</b>. <br /><br /> He became a successful smart contract developer which enabled him to transition to entrepreneurship; a venture he funds on his own.
             </Typography>
           </Grid>
         </Grid>
+
         <Grid container alignItems="center" style={{ padding: 20, marginTop: 50 }}>
           <Grid container item md={7} direction="column" className={classes.welcomeTxt1} data-aos="fade-right">
             <Typography variant="h1" className={classes.welcomeTitle}>
-              Dapp Dexterity
+              Particlon
             </Typography>
             <Typography variant="h3" className={classes.welcomeContent}>
-              He is the founder of Dapp Dexterity, a professional organization of world-class developers and
-              marketing managers that deliver rock-solid products in the field of DeFi and NFTs.<br /><br />
-              As of recently, he became interested in metaverse land investments.
+              Ape Toshi is the lead Solidity dev for Particlon: <br /> <br /> "Particlons are stacked with utility to help power a long-term vision, engaging you in play-to-earn gaming. This first generative drop comes with nested ERC-20 utility tokens at the time of mint. Each Particlon will have a unique quantity of Particlon utility tokens ($PUT) that can be used to acquire additional in-game assets and entry to token-gated tournaments"
+              <br /><br />
             </Typography>
           </Grid>
           <Grid container item md={5} direction="column" data-aos="fade-left" >
             <Grid container item justifyContent="center" className={classes.welcomeImgSx}>
               <Image
-                width="500"
-                height="280"
+                width="350"
+                height="350"
                 className={classes.apetoshiProfile}
-                src="/dapp-dexterity-banner.png"
-                alt="my image"
+                src="/imgs/particlon-preview.jpeg"
+                alt="Particlon logo"
                 loading="eager"
               />
             </Grid>
           </Grid>
         </Grid>
+
+
+        <Grid container alignItems="center" style={{ padding: 20, marginTop: 100 }}>
+          <Grid container item md={5} direction="column" data-aos="fade-right">
+            <Grid container item justifyContent="center" className={classes.welcomeImgSx}>
+              <Image
+                width="350"
+                height="350"
+                className={classes.apetoshiProfile}
+                src="/imgs/penguin.png"
+                alt="Flip City Penguin"
+                loading="eager"
+              />
+            </Grid>
+          </Grid>
+
+          <Grid container item md={7} direction="column" className={classes.welcomeTxt} data-aos="fade-left">
+            <Typography variant="h1" className={classes.welcomeTitle}>
+              Flip City Penguins
+            </Typography>
+            <Typography variant="h3" className={classes.welcomeContent}>
+              Ape Toshi is part of The Commision, there he was named Sonny Pengliachi. <br /><br />
+              He is responsible for implementing the $FLIP token farming and is working both smart and hard on the upcomming on-chain game. <br /><br />
+            </Typography>
+          </Grid>
+        </Grid>
+
+        <Grid container alignItems="center" style={{ padding: 20, marginTop: 50 }}>
+          <Grid container item md={7} direction="column" className={classes.welcomeTxt1} data-aos="fade-right">
+            <Typography variant="h1" className={classes.welcomeTitle}>
+              Hype Mansion Club
+            </Typography>
+            <Typography variant="h3" className={classes.welcomeContent}>
+              Ape Toshi is part of Hype Labs, the tech department of a new brand focused on merging Hypercars and Web3. <br /> <br />
+              He is a huge fan of elegance, ingenuity and power. <br /> <br />
+              <br /><br />
+            </Typography>
+          </Grid>
+          <Grid container item md={5} direction="column" data-aos="fade-left" >
+            <Grid container item justifyContent="center" className={classes.welcomeImgSx}>
+              <Image
+                width="350"
+                height="350"
+                className={classes.apetoshiProfile}
+                src="/imgs/hype-circle-logo-red.png"
+                alt="Particlon logo"
+                loading="eager"
+              />
+            </Grid>
+          </Grid>
+        </Grid>
+
       </Container>
     </Grid>
   );

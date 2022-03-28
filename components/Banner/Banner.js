@@ -1,4 +1,4 @@
-import { Container, Grid } from "@material-ui/core";
+// import { Container, Grid } from "@material-ui/core";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import Image from 'next/image'
@@ -7,37 +7,37 @@ const images = [
   {
     label: '1',
     imgPath:
-      '/banner/1.gif',
+      '/imgs/particlon-banner.jpg',
   },
   {
     label: '2',
     imgPath:
-      '/banner/2.gif',
+      '/imgs/particlon-planets.gif',
   },
   {
     label: '3',
     imgPath:
-      '/banner/3.jpg',
+      '/imgs/flip-banner.png',
   },
   {
     label: '4',
     imgPath:
-      '/banner/4.jpg',
+      '/imgs/flip-penguins.png',
   },
   {
     label: '5',
     imgPath:
-      '/banner/5.jpg',
+      '/imgs/hmc-banner.png',
   }
 ];
 
 const Banner = () => {
   return (
-    <Carousel autoPlay={true} swipeable={true} statusFormatter={() => ''} showThumbs={false} swipeable={true} emulateTouch={true} interval={8000}>
+    <Carousel autoPlay={true} swipeable={true} statusFormatter={() => ''} showThumbs={false} swipeable={true} emulateTouch={true} interval={6000} infiniteLoop={true}>
       {images.map((n) => (
         <Image
           key={n.label}
-          width="1600"
+          width="1500"
           height="500"
           src={n.imgPath}
           alt="my image"

@@ -4,7 +4,7 @@
 // you can find out  Material icon. => https://material-ui.com/components/material-icons/
 
 export const socialMedia = {
-  instagram: "https://www.instagram.com/developer_satoru_akiyama/",
+  // instagram: "https://www.instagram.com/developer_satoru_akiyama/",
   twitter: "https://twitter.com/0xApeToshi",
   discord: "https://discord.gg/uPEbUpBV",
 };
