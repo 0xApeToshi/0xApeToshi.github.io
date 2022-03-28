@@ -97,7 +97,7 @@ const About = () => {
               Particlon
             </Typography>
             <Typography variant="h3" className={classes.welcomeContent}>
-              Ape Toshi is the lead Solidity dev for Particlon: <br /> <br /> "Particlons are stacked with utility to help power a long-term vision, engaging you in play-to-earn gaming. This first generative drop comes with nested ERC-20 utility tokens at the time of mint. Each Particlon will have a unique quantity of Particlon utility tokens ($PUT) that can be used to acquire additional in-game assets and entry to token-gated tournaments"
+              Ape Toshi is the lead Solidity dev for <a href="https://particlon.xyz/">Particlon</a> <br /> <br /> "Particlons are stacked with utility to help power a long-term vision, engaging you in play-to-earn gaming. This first generative drop comes with nested ERC-20 utility tokens at the time of mint. Each Particlon will have a unique quantity of Particlon utility tokens ($PUT) that can be used to acquire additional in-game assets and entry to token-gated tournaments"
               <br /><br />
             </Typography>
           </Grid>
@@ -135,7 +135,7 @@ const About = () => {
               Flip City Penguins
             </Typography>
             <Typography variant="h3" className={classes.welcomeContent}>
-              Ape Toshi is part of The Commision, there he was named Sonny Pengliachi. <br /><br />
+              Ape Toshi is part of The Commision in <a href="https://flipcity.io/">Flip City</a>, there he was named Sonny Pengliachi. <br /><br />
               He is responsible for implementing the $FLIP token farming and is working both smart and hard on the upcomming on-chain game. <br /><br />
             </Typography>
           </Grid>
@@ -147,7 +147,7 @@ const About = () => {
               Hype Mansion Club
             </Typography>
             <Typography variant="h3" className={classes.welcomeContent}>
-              Ape Toshi is part of Hype Labs, the tech department of a new brand focused on merging Hypercars and Web3. <br /> <br />
+              Ape Toshi is part of Hype Labs, the tech department of <a href="https://hypemansionclub.com/">Hype Mansion Club</a>: a new brand focused on merging Hypercars and Web3. <br /> <br />
               He is a huge fan of elegance, ingenuity and power. <br /> <br />
               <br /><br />
             </Typography>

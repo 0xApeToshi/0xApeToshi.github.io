@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { Container, Grid, Typography, LinearProgress, Button, Box } from "@material-ui/core";
+import { Container, Grid, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import ReactPlayer from 'react-player/lazy'
+// import ReactPlayer from 'react-player/lazy'
 
 const useStyles = makeStyles((theme) => ({
   welcomeImgSx: {
